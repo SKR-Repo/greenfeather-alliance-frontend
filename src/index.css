@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+/*
+  Global file = design tokens ONLY (colors + fonts).
+  Every component keeps its own styles in its className.
+*/
+@theme {
+  --font-body: "Poppins", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Montserrat", "Poppins", ui-sans-serif, system-ui, sans-serif;
+  /* desktop hero headline only (narrower heavy geometric, closest free match to the live site's face) */
+  --font-hero: "Urbanist", "Montserrat", ui-sans-serif, system-ui, sans-serif;
+
+  --color-ra-yellow: #ffe12e;
+  --color-ra-teal: #17545b;
+  --color-ra-ink: #1b3a3d;
+  --color-ra-sage: #e7edee;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+}
